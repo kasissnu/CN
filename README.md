@@ -9,20 +9,6 @@ It retrieves flow entries, displays rule details, and identifies **ACTIVE vs UNU
 
 ---
 
-## Topology
-
-Linear topology with 3 switches and 3 hosts:
-
-```
-
-h1 — s1 — s2 — s3 — h3
-|
-h2
-
-````
-
----
-
 ## Setup
 
 ### Install Requirements
@@ -80,7 +66,7 @@ pingall
 * All hosts reachable
 * Flow rules become ACTIVE
 
-![Ping Success](images/0%_loss.png)
+![Ping Success](images/0_loss.png)
 
 ---
 
@@ -136,7 +122,7 @@ sudo ovs-ofctl dump-flows s1
 
 * Low latency during normal operation
 
-![Ping Stats](images/0%_loss.png)
+![Ping Stats](images/0_loss.png)
 
 ---
 
